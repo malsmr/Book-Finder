@@ -1,0 +1,41 @@
+<div class="row">
+<div class="panel panel-default col-md-10 col-md-offset-1">
+  <div class="panel-heading">
+    <h3 class="panel-title">Search Book in Google API</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-12">
+      <form ng-submit="searchBooks()">
+        <div class="form-group">
+          <label>Title</label>
+          <input type="text" class="form-control" ng-model="title" placeholder="Title">
+        </div>
+        <button type="submit" class="btn btn-success">Search</button>
+      </form>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="panel panel-default" ng-repeat="book in books">
+  <div class="panel-heading">
+    <h2 class="panel-title"><b>{{book.title}}</b></h2>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="{{book.image_url}}" height="350">
+      </div>
+      <div class="col-md-8">
+        </p><b>{{book.description}}</b></p>
+        <ul class="list-group">
+          <li class="list-group-item"><b>Genre: </b>{{book.genre}}</li>
+          <li class="list-group-item"><b>Author: </b>{{book.author}}</li>
+          <li class="list-group-item"><b>Publisher: </b>{{book.publisher}}</li>
+        </ul>
+        <hr/>
+      </div>
+    </div>
+  </div>
+</div>

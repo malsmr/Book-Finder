@@ -1,0 +1,18 @@
+{
+  "name": "bookfinder",
+  "version": "0.0.1",
+  "description": "Book Finder Application- 1. Search for Books in Google Books API 2. Search Local DB for Books using Author or Editor.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no tests specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "express": "*",
+    "google-books-search": "^0.3.1",
+    "mongoose": "*"
+  },
+  "author": "Malini",
+  "license": "MIT",
+  "devDependencies": {}
+}
